@@ -167,6 +167,7 @@ class ResponseParser:
         lower = text.lower()
         if any(phrase in lower for phrase in [
             "full grant", "granted in full", "fully granted",
+            "granting your request in full", "request in full",
             "releasing all", "all responsive records",
         ]):
             return "full_grant"
@@ -245,9 +246,9 @@ class ResponseParser:
     def _extract_page_counts(text: str) -> dict[str, int]:
         counts: dict[str, int] = {}
 
-        # "X pages released" or "released X pages"
+        # "X pages released" or "released X pages" or "X pages were released"
         released = re.findall(
-            r"(\d{1,6})\s+pages?\s+(?:released|provided|enclosed|produced)"
+            r"(\d{1,6})\s+pages?\s+(?:were\s+)?(?:released|provided|enclosed|produced)"
             r"|(?:releas|provid|enclos|produc)\w+\s+(\d{1,6})\s+pages?",
             text, re.IGNORECASE,
         )
@@ -256,9 +257,9 @@ class ResponseParser:
                 if g:
                     counts["released"] = counts.get("released", 0) + int(g)
 
-        # "X pages withheld"
+        # "X pages withheld" or "X pages were withheld"
         withheld = re.findall(
-            r"(\d{1,6})\s+pages?\s+(?:withheld|redacted|denied)"
+            r"(\d{1,6})\s+pages?\s+(?:were\s+)?(?:withheld|redacted|denied)"
             r"|(?:withheld|redacted|denied)\s+(\d{1,6})\s+pages?",
             text, re.IGNORECASE,
         )
