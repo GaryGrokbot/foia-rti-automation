@@ -7,6 +7,7 @@ Commands:
     track     — View and update tracked requests
     appeal    — Generate an appeal letter
     stats     — Show request statistics and alerts
+    dispatch  — Run a multi-persona FOIA/RTI dispatch campaign
 """
 
 from __future__ import annotations
@@ -488,6 +489,82 @@ def list_templates(jurisdiction: str) -> None:
         if t.get("description"):
             click.echo(f"    {t['description'][:100]}")
         click.echo()
+
+
+# ---------------------------------------------------------------------------
+# dispatch
+# ---------------------------------------------------------------------------
+
+@cli.command()
+@click.option("--config", "-c", "config_path", required=True,
+              help="Path to dispatch_config.json file.")
+@click.option("--dry-run", is_flag=True, help="Generate all requests without sending.")
+@click.option("--max-today", type=int, default=None,
+              help="Override the daily maximum number of dispatches.")
+@click.option("--report-file", "-r", default=None,
+              help="Write the dispatch report to a file.")
+@click.pass_context
+def dispatch(
+    ctx: click.Context,
+    config_path: str,
+    dry_run: bool,
+    max_today: Optional[int],
+    report_file: Optional[str],
+) -> None:
+    """Run a multi-persona FOIA/RTI dispatch campaign.
+
+    Loads a dispatch configuration file, generates requests from templates,
+    assigns persona accounts, and files via email. Use --dry-run to preview
+    without actually sending.
+
+    \b
+    Examples:
+        foia-rti dispatch --config dispatch_config.json --dry-run
+        foia-rti dispatch --config dispatch_config.json --max-today 10
+        foia-rti dispatch -c dispatch_config.json -r report.txt
+    """
+    from foia_rti.dispatch.config import load_dispatch_config
+    from foia_rti.dispatch.runner import DispatchRunner
+
+    try:
+        config = load_dispatch_config(config_path)
+    except FileNotFoundError as e:
+        click.echo(f"Error: {e}", err=True)
+        sys.exit(1)
+    except Exception as e:
+        click.echo(f"Error loading config: {e}", err=True)
+        sys.exit(1)
+
+    # Show pre-flight summary
+    active_personas = config.active_persona_count()
+    total_targets = len(config.targets)
+    click.echo(f"Dispatch config loaded: {active_personas} active personas, {total_targets} targets")
+
+    if active_personas == 0:
+        click.echo(
+            "Warning: No active personas. Ensure password environment variables are set.",
+            err=True,
+        )
+        if not dry_run:
+            sys.exit(1)
+
+    mode = "DRY RUN" if dry_run else "LIVE"
+    click.echo(f"Mode: {mode}")
+    if max_today is not None:
+        click.echo(f"Daily limit override: {max_today}")
+    click.echo("")
+
+    # Run dispatch
+    runner = DispatchRunner(config, db_url=ctx.obj["db_url"])
+    report = runner.run(dry_run=dry_run, max_today=max_today)
+
+    # Output report
+    summary = report.summary()
+    click.echo(summary)
+
+    if report_file:
+        Path(report_file).write_text(summary, encoding="utf-8")
+        click.echo(f"\nReport written to {report_file}")
 
 
 # ---------------------------------------------------------------------------

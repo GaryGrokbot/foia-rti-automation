@@ -1,0 +1,253 @@
+{
+  "global_max_daily": 20,
+  "min_delay_minutes": 15,
+  "stagger_days": true,
+
+  "personas": [
+    {
+      "email": "persona1@gmail.com",
+      "password_env": "PERSONA_1_PASSWORD",
+      "display_name": "Alex Rivera",
+      "organization": "Open Paws Research",
+      "jurisdictions": ["US-Federal"],
+      "max_requests_per_week": 5,
+      "active": true
+    },
+    {
+      "email": "persona2@gmail.com",
+      "password_env": "PERSONA_2_PASSWORD",
+      "display_name": "Jordan Chen",
+      "organization": "Open Paws Research",
+      "jurisdictions": ["US-Federal"],
+      "max_requests_per_week": 5,
+      "active": true
+    },
+    {
+      "email": "persona3@gmail.com",
+      "password_env": "PERSONA_3_PASSWORD",
+      "display_name": "Morgan Patel",
+      "organization": "Open Paws Research",
+      "jurisdictions": ["US-Federal", "India"],
+      "max_requests_per_week": 5,
+      "active": true
+    },
+    {
+      "email": "persona4@gmail.com",
+      "password_env": "PERSONA_4_PASSWORD",
+      "display_name": "Taylor Okafor",
+      "organization": "Open Paws Research",
+      "jurisdictions": ["India"],
+      "max_requests_per_week": 5,
+      "active": true
+    },
+    {
+      "email": "persona5@gmail.com",
+      "password_env": "PERSONA_5_PASSWORD",
+      "display_name": "Sam Nguyen",
+      "organization": "Open Paws Research",
+      "jurisdictions": ["US-Federal", "India"],
+      "max_requests_per_week": 5,
+      "active": true
+    }
+  ],
+
+  "targets": [
+    {
+      "template_id": "usda-aphis-inspection-reports",
+      "agency": "USDA-APHIS",
+      "jurisdiction": "US-Federal",
+      "priority": 1
+    },
+    {
+      "template_id": "usda-fsis-humane-slaughter",
+      "agency": "USDA-FSIS",
+      "jurisdiction": "US-Federal",
+      "priority": 1
+    },
+    {
+      "template_id": "epa-cafo-permits",
+      "agency": "EPA",
+      "jurisdiction": "US-Federal",
+      "priority": 1
+    },
+    {
+      "template_id": "osha-slaughterhouse-injuries",
+      "agency": "OSHA",
+      "jurisdiction": "US-Federal",
+      "priority": 1
+    },
+
+    {
+      "template_id": "usda-fsis-slaughter-inspection",
+      "agency": "USDA-FSIS",
+      "jurisdiction": "US-Federal",
+      "priority": 2
+    },
+    {
+      "template_id": "fda-antibiotic-feed",
+      "agency": "FDA",
+      "jurisdiction": "US-Federal",
+      "priority": 2
+    },
+    {
+      "template_id": "epa-cafo-water-quality",
+      "agency": "EPA",
+      "jurisdiction": "US-Federal",
+      "priority": 2
+    },
+    {
+      "template_id": "usda-aphis-enforcement-actions",
+      "agency": "USDA-APHIS",
+      "jurisdiction": "US-Federal",
+      "priority": 2
+    },
+    {
+      "template_id": "usda-aphis-transport-deaths",
+      "agency": "USDA-APHIS",
+      "jurisdiction": "US-Federal",
+      "priority": 2
+    },
+
+    {
+      "template_id": "usda-fsis-poultry-exemptions",
+      "agency": "USDA-FSIS",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "epa-cafo-air-quality",
+      "agency": "EPA",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "fda-residue-testing",
+      "agency": "FDA",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "osha-cafo-worker-safety",
+      "agency": "OSHA",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "usda-aphis-research-animals",
+      "agency": "USDA-APHIS",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "usda-fsa-subsidy-payments",
+      "agency": "USDA-FSA",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "usda-nrcs-eqip-livestock",
+      "agency": "USDA-NRCS",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "usda-ams-organic-livestock",
+      "agency": "USDA-AMS",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "epa-environmental-justice-cafo",
+      "agency": "EPA",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "usda-industry-correspondence",
+      "agency": "USDA-APHIS",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "usda-fsis-facility-permits",
+      "agency": "USDA-FSIS",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+    {
+      "template_id": "epa-cafo-reporting-exemption",
+      "agency": "EPA",
+      "jurisdiction": "US-Federal",
+      "priority": 3
+    },
+
+    {
+      "template_id": "awbi-slaughterhouse-inspections",
+      "agency": "AWBI",
+      "jurisdiction": "India",
+      "priority": 1
+    },
+    {
+      "template_id": "fssai-meat-licensing",
+      "agency": "FSSAI",
+      "jurisdiction": "India",
+      "priority": 1
+    },
+    {
+      "template_id": "cpcb-slaughterhouse-pollution",
+      "agency": "CPCB",
+      "jurisdiction": "India",
+      "priority": 1
+    },
+
+    {
+      "template_id": "fssai-dairy-adulteration",
+      "agency": "FSSAI",
+      "jurisdiction": "India",
+      "priority": 2
+    },
+    {
+      "template_id": "dahd-livestock-census",
+      "agency": "DAHD",
+      "jurisdiction": "India",
+      "priority": 2
+    },
+    {
+      "template_id": "dahd-disease-outbreaks",
+      "agency": "DAHD",
+      "jurisdiction": "India",
+      "priority": 2
+    },
+    {
+      "template_id": "moefcc-environmental-clearance",
+      "agency": "MoEFCC",
+      "jurisdiction": "India",
+      "priority": 2
+    },
+
+    {
+      "template_id": "awbi-abc-programme",
+      "agency": "AWBI",
+      "jurisdiction": "India",
+      "priority": 3
+    },
+    {
+      "template_id": "spcb-cafo-compliance",
+      "agency": "SPCB",
+      "jurisdiction": "India",
+      "priority": 3
+    },
+    {
+      "template_id": "awbi-performing-animals",
+      "agency": "AWBI",
+      "jurisdiction": "India",
+      "priority": 3
+    },
+    {
+      "template_id": "apeda-meat-export",
+      "agency": "APEDA",
+      "jurisdiction": "India",
+      "priority": 3
+    }
+  ]
+}
