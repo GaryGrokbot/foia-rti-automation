@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foia-rti-automation"
+version = "0.1.0"
+description = "Automated generation, filing, tracking, and analysis of public records requests across jurisdictions"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Open Paws", email = "info@openpaws.org"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Legal Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Other/Nonlisted Topic",
+]
+dependencies = [
+    "click>=8.1",
+    "jinja2>=3.1",
+    "sqlalchemy>=2.0",
+    "httpx>=0.25",
+    "python-dateutil>=2.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1",
+    "mypy>=1.0",
+]
+
+[project.scripts]
+foia-rti = "foia_rti.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/open-paws/foia-rti-automation"
+Issues = "https://github.com/open-paws/foia-rti-automation/issues"
+
+[tool.setuptools.packages.find]
+include = ["foia_rti*"]
+
+[tool.setuptools.package-data]
+foia_rti = ["../templates/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

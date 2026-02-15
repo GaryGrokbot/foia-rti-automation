@@ -1,0 +1,155 @@
+{
+  "jurisdiction": "India",
+  "description": "Pre-built RTI application templates for animal welfare and food safety transparency",
+  "templates": [
+    {
+      "id": "awbi-slaughterhouse-inspections",
+      "name": "AWBI Slaughterhouse Inspection Reports",
+      "agency": "AWBI",
+      "description": "Inspection records of registered and unregistered slaughterhouses",
+      "records": [
+        "Inspection reports of slaughterhouses conducted or commissioned by the Animal Welfare Board of India, including compliance with the Prevention of Cruelty to Animals (Slaughter House) Rules, 2001",
+        "List of slaughterhouses registered with local municipal bodies and their inspection status",
+        "Complaints received by AWBI regarding illegal or inhumane slaughterhouse operations and actions taken thereon",
+        "Compliance status with Food Safety and Standards (Licensing and Registration of Food Businesses) Regulation, 2011 for meat processing units"
+      ],
+      "keywords": ["slaughterhouse", "inspection", "PCA", "Prevention of Cruelty to Animals", "slaughter rules"]
+    },
+    {
+      "id": "awbi-abc-programme",
+      "name": "AWBI Animal Birth Control Programme Data",
+      "agency": "AWBI",
+      "description": "Data on the Animal Birth Control programme for stray dogs",
+      "records": [
+        "State-wise and city-wise data on the number of sterilizations performed under the Animal Birth Control (Dogs) Rules, 2001, as amended in 2023",
+        "Grants disbursed to Animal Welfare Organizations (AWOs) for ABC implementation",
+        "Monitoring and evaluation reports of ABC programmes in metropolitan areas",
+        "Complaints received against AWOs regarding ABC programme implementation"
+      ],
+      "keywords": ["ABC", "animal birth control", "sterilization", "stray dogs", "AWO"]
+    },
+    {
+      "id": "fssai-meat-licensing",
+      "name": "FSSAI Meat Processing Facility Licensing",
+      "agency": "FSSAI",
+      "description": "Licensing and inspection data for meat and dairy processing facilities",
+      "records": [
+        "State-wise list of licensed meat processing facilities under FSSAI, including license category and processing capacity",
+        "Inspection reports of meat processing units, with details of non-compliance found",
+        "Antibiotic residue testing data in meat and dairy products sold in Indian markets",
+        "Actions taken against unlicensed or non-compliant meat and dairy processing units",
+        "Results of surveillance sampling for microbiological contamination in meat products"
+      ],
+      "keywords": ["meat processing", "licensing", "FSSAI", "antibiotic residue", "food safety"]
+    },
+    {
+      "id": "fssai-dairy-adulteration",
+      "name": "FSSAI Dairy Adulteration Surveillance",
+      "agency": "FSSAI",
+      "description": "Milk and dairy product adulteration testing data",
+      "records": [
+        "Results of the National Milk Quality Survey and any subsequent surveys conducted by FSSAI",
+        "State-wise data on milk adulteration cases detected, type of adulterant found, and enforcement actions taken",
+        "Aflatoxin M1 contamination data in milk and dairy products",
+        "Antibiotic residue testing results in milk samples collected from dairy cooperatives and private processors"
+      ],
+      "keywords": ["dairy", "adulteration", "milk quality", "aflatoxin", "antibiotic residue"]
+    },
+    {
+      "id": "cpcb-slaughterhouse-pollution",
+      "name": "CPCB Slaughterhouse and Tannery Pollution",
+      "agency": "CPCB",
+      "description": "Pollution data from slaughterhouses and tanneries",
+      "records": [
+        "List of slaughterhouses and tanneries classified as grossly polluting industries under the CPCB categorization",
+        "Effluent monitoring data for slaughterhouses and tanneries, including BOD, COD, and TSS measurements",
+        "Consent-to-operate status and compliance records for slaughterhouses in major cities",
+        "Show-cause notices and closure directions issued to non-compliant slaughterhouses and tanneries",
+        "Environmental compensation levied on polluting slaughterhouses and tanneries"
+      ],
+      "keywords": ["pollution", "effluent", "slaughterhouse", "tannery", "consent to operate", "BOD"]
+    },
+    {
+      "id": "dahd-livestock-census",
+      "name": "Department of Animal Husbandry Livestock Census Data",
+      "agency": "DAHD",
+      "description": "Detailed livestock census and scheme data",
+      "records": [
+        "District-wise detailed data from the 20th Livestock Census (2019) and any subsequent census, including species breakdown, breed-wise data, and ownership patterns",
+        "Beneficiary data for National Livestock Mission schemes, state-wise and district-wise",
+        "Subsidy disbursements under the Dairy Development schemes (NDP, DEDS)",
+        "Poultry development scheme expenditure and beneficiary data",
+        "Pig development scheme implementation data and expenditure by state"
+      ],
+      "keywords": ["livestock census", "NLM", "dairy development", "poultry", "subsidy", "scheme"]
+    },
+    {
+      "id": "dahd-disease-outbreaks",
+      "name": "Department of Animal Husbandry Disease Outbreak Data",
+      "agency": "DAHD",
+      "description": "Animal disease surveillance and outbreak response data",
+      "records": [
+        "State-wise and district-wise data on avian influenza (bird flu) outbreaks, including number of birds culled and compensation paid",
+        "Foot-and-mouth disease (FMD) outbreak data and vaccination coverage under the FMD Control Programme",
+        "Brucellosis prevalence data in cattle and buffalo populations",
+        "African Swine Fever outbreak data and containment measures",
+        "National Animal Disease Reporting System (NADRS) data submissions by states"
+      ],
+      "keywords": ["disease outbreak", "avian influenza", "FMD", "brucellosis", "NADRS", "culling"]
+    },
+    {
+      "id": "moefcc-environmental-clearance",
+      "name": "MoEFCC Environmental Clearances for Livestock Facilities",
+      "agency": "MoEFCC",
+      "description": "Environmental impact assessments for large-scale animal operations",
+      "records": [
+        "Environmental clearance applications and decisions for large-scale poultry farms, dairy farms, and animal husbandry projects under the EIA Notification 2006",
+        "Environment Impact Assessment reports prepared for animal agriculture projects",
+        "Conditions imposed in environmental clearances for livestock-related projects and compliance monitoring reports",
+        "Public hearing proceedings for proposed large-scale animal agriculture projects"
+      ],
+      "keywords": ["environmental clearance", "EIA", "poultry farm", "dairy farm", "environmental impact"]
+    },
+    {
+      "id": "spcb-cafo-compliance",
+      "name": "State Pollution Control Board — Large Farm Compliance",
+      "agency": "SPCB",
+      "description": "State-level compliance data for intensive animal farming operations",
+      "records": [
+        "List of intensive poultry, dairy, and pig farming operations that have obtained consent-to-establish and consent-to-operate from the State Pollution Control Board",
+        "Pollution monitoring data (air, water, soil) for areas surrounding intensive animal farming operations",
+        "Complaints received from local communities regarding pollution from animal farming operations and actions taken",
+        "Show-cause and closure notices issued to animal farming operations for environmental violations"
+      ],
+      "keywords": ["consent to operate", "pollution", "intensive farming", "poultry", "dairy", "complaints"]
+    },
+    {
+      "id": "awbi-performing-animals",
+      "name": "AWBI Performing Animal Registration",
+      "agency": "AWBI",
+      "description": "Registration and inspection data for performing and captive animals",
+      "records": [
+        "List of registered performing animal establishments under the Performing Animals (Registration) Rules, 2001",
+        "Inspection reports of circuses, zoos, and other facilities using performing animals",
+        "Complaints received regarding cruelty to performing animals and investigations conducted",
+        "Registration applications rejected or revoked and reasons therefor",
+        "Data on elephants held in captivity, including ownership transfer records and health assessments"
+      ],
+      "keywords": ["performing animals", "circus", "zoo", "elephant", "captivity", "registration"]
+    },
+    {
+      "id": "apeda-meat-export",
+      "name": "APEDA Meat Export Data",
+      "agency": "APEDA",
+      "description": "Meat and animal product export data and registered units",
+      "records": [
+        "Country-wise and product-wise export data for meat (buffalo, sheep/goat, poultry) and animal products",
+        "List of APEDA-registered meat processing and export units with capacity and location details",
+        "Inspection and compliance reports for registered meat export units",
+        "Traceability system implementation data for exported animal products",
+        "Rejections or detentions of Indian meat/animal product shipments by importing countries and reasons therefor"
+      ],
+      "keywords": ["meat export", "buffalo meat", "APEDA", "traceability", "export unit", "rejection"]
+    }
+  ]
+}

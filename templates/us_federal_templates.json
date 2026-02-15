@@ -1,0 +1,302 @@
+{
+  "jurisdiction": "US-Federal",
+  "description": "Pre-built FOIA request templates for animal agriculture transparency",
+  "templates": [
+    {
+      "id": "usda-aphis-inspection-reports",
+      "name": "USDA-APHIS Animal Welfare Act Inspection Reports",
+      "agency": "USDA-APHIS",
+      "description": "Routine and for-cause inspection reports under the Animal Welfare Act",
+      "records": [
+        "All Animal Welfare Act (AWA) inspection reports, including routine, focused, and for-cause inspections",
+        "Pre-license inspection reports",
+        "Compliance inspection reports (Form 7006)",
+        "Teachable moments documented during inspections",
+        "Photographs or video recordings taken during inspections"
+      ],
+      "keywords": ["Animal Welfare Act", "AWA", "inspection", "noncompliance", "direct", "critical"],
+      "notes": "APHIS publishes some inspection reports on its ACIS database, but historical and detailed enforcement data may require FOIA."
+    },
+    {
+      "id": "usda-aphis-enforcement-actions",
+      "name": "USDA-APHIS AWA Enforcement Actions",
+      "agency": "USDA-APHIS",
+      "description": "Stipulations, consent decisions, and civil penalties under the AWA",
+      "records": [
+        "Official Warning Letters issued to AWA licensees and registrants",
+        "Stipulation agreements and consent decisions",
+        "Administrative complaints filed before the USDA Administrative Law Judge",
+        "Civil penalty assessments and payment records",
+        "License suspension and revocation orders",
+        "Pre-litigation settlement negotiations (non-privileged portions)"
+      ],
+      "keywords": ["enforcement", "penalty", "stipulation", "consent decision", "revocation", "suspension"]
+    },
+    {
+      "id": "usda-fsis-slaughter-inspection",
+      "name": "FSIS Slaughterhouse Inspection Records",
+      "agency": "USDA-FSIS",
+      "description": "In-plant inspection records for slaughter establishments",
+      "records": [
+        "Noncompliance Records (NRs) issued to slaughter establishments",
+        "Memoranda of Interview (MOIs) between FSIS inspectors and plant management",
+        "Humane Handling Enforcement Actions (suspensions under 9 CFR 500.2)",
+        "Public Health Veterinarian (PHV) reports on ante-mortem and post-mortem inspection",
+        "FSIS District Veterinary Medical Specialist (DVMS) reports",
+        "Recalls and public health alerts related to the establishment"
+      ],
+      "keywords": ["noncompliance", "NR", "MOI", "humane handling", "suspension", "9 CFR 500"]
+    },
+    {
+      "id": "usda-fsis-humane-slaughter",
+      "name": "FSIS Humane Methods of Slaughter Act Enforcement",
+      "agency": "USDA-FSIS",
+      "description": "Records specific to humane slaughter enforcement",
+      "records": [
+        "All Humane Methods of Slaughter Act (HMSA) noncompliance records",
+        "Regulatory control actions (suspension of operations) for humane handling violations",
+        "In-plant inspection records documenting inhumane treatment, improper stunning, or sensible animals on the bleed rail",
+        "FSIS Directive 6900.2 compliance documentation",
+        "Egregious violations reported under FSIS Notice 04-16"
+      ],
+      "keywords": ["humane slaughter", "HMSA", "stunning", "sensible", "egregious", "inhumane"]
+    },
+    {
+      "id": "usda-fsis-poultry-exemptions",
+      "name": "FSIS Poultry Slaughter Exemptions",
+      "agency": "USDA-FSIS",
+      "description": "Custom and other exemption records for poultry slaughter",
+      "records": [
+        "List of facilities operating under poultry slaughter exemptions (9 CFR 381.10)",
+        "Custom-exempt poultry facility applications and approvals",
+        "State inspection program equivalency reviews",
+        "Poultry-specific noncompliance records and enforcement actions"
+      ],
+      "keywords": ["poultry", "exemption", "9 CFR 381", "custom", "state inspection"]
+    },
+    {
+      "id": "epa-cafo-permits",
+      "name": "EPA CAFO Permits and Compliance",
+      "agency": "EPA",
+      "description": "NPDES permits and compliance data for concentrated animal feeding operations",
+      "records": [
+        "National Pollutant Discharge Elimination System (NPDES) permits issued to CAFOs",
+        "Nutrient management plans submitted by CAFO operators",
+        "Compliance monitoring reports and inspection records for permitted CAFOs",
+        "Notices of violation (NOVs) issued to CAFOs",
+        "Consent decrees and settlement agreements with CAFO operators",
+        "Annual reports submitted by permitted CAFOs"
+      ],
+      "keywords": ["CAFO", "NPDES", "concentrated animal feeding", "nutrient management", "discharge"]
+    },
+    {
+      "id": "epa-cafo-water-quality",
+      "name": "EPA CAFO Water Quality Violations",
+      "agency": "EPA",
+      "description": "Clean Water Act enforcement against animal agriculture operations",
+      "records": [
+        "Clean Water Act Section 402 enforcement actions against CAFOs",
+        "Water quality monitoring data downstream of CAFO operations",
+        "Manure spill incident reports and emergency response records",
+        "EPA inspections of unpermitted animal feeding operations",
+        "Referrals to state environmental agencies for CAFO violations"
+      ],
+      "keywords": ["Clean Water Act", "CWA", "water quality", "manure spill", "discharge violation"]
+    },
+    {
+      "id": "epa-cafo-air-quality",
+      "name": "EPA CAFO Air Emissions",
+      "agency": "EPA",
+      "description": "Air quality data and enforcement for animal agriculture",
+      "records": [
+        "National Air Emissions Monitoring Study (NAEMS) data for animal feeding operations",
+        "Air emission inventories reported by CAFOs",
+        "Clean Air Act enforcement actions related to animal agriculture",
+        "Hydrogen sulfide and ammonia monitoring data near CAFO facilities",
+        "Records related to the EPA Animal Feeding Operations Consent Agreement (2005 Air Compliance Agreement)"
+      ],
+      "keywords": ["air emissions", "ammonia", "hydrogen sulfide", "NAEMS", "Clean Air Act"]
+    },
+    {
+      "id": "fda-antibiotic-feed",
+      "name": "FDA Medicated Feed and Antibiotic Use",
+      "agency": "FDA",
+      "description": "Medicated feed applications, veterinary feed directives, and antibiotic sales data",
+      "records": [
+        "New Animal Drug Applications (NADAs) for medicated feed additives used in food animals",
+        "Veterinary Feed Directive (VFD) compliance reports",
+        "Annual antimicrobial sales and distribution reports (by species, if available)",
+        "FDA inspections of medicated feed mills",
+        "Warning letters issued for VFD violations or unapproved drug use in food animals"
+      ],
+      "keywords": ["medicated feed", "antibiotic", "antimicrobial", "VFD", "NADA", "veterinary feed directive"]
+    },
+    {
+      "id": "fda-residue-testing",
+      "name": "FDA Drug Residue Testing in Meat and Dairy",
+      "agency": "FDA",
+      "description": "Drug residue violation data in food animal products",
+      "records": [
+        "National Residue Program (NRP) violation data for drug residues in meat, poultry, and eggs",
+        "Tissue residue testing results by species and drug class",
+        "Warning letters and regulatory actions for illegal drug residues",
+        "Import alerts for animal products with residue violations",
+        "KIS (Keep It Simple) testing data from FSIS-FDA coordination"
+      ],
+      "keywords": ["residue", "drug residue", "National Residue Program", "tissue sample", "violative"]
+    },
+    {
+      "id": "osha-slaughterhouse-injuries",
+      "name": "OSHA Slaughterhouse Workplace Injuries",
+      "agency": "OSHA",
+      "description": "Workplace injury, illness, and inspection records for meat and poultry plants",
+      "records": [
+        "OSHA 300 Logs (Log of Work-Related Injuries and Illnesses) for meat and poultry processing establishments",
+        "OSHA inspection reports for facilities classified under NAICS codes 311611, 311612, 311613, 311615",
+        "Citations issued and penalties assessed at slaughterhouses and meatpacking plants",
+        "Severe injury reports (amputations, hospitalizations, fatalities) at meat processing facilities",
+        "Ergonomic hazard assessments for repetitive motion injuries at processing lines"
+      ],
+      "keywords": ["slaughterhouse", "meatpacking", "amputation", "injury", "NAICS 3116", "poultry processing"]
+    },
+    {
+      "id": "osha-cafo-worker-safety",
+      "name": "OSHA CAFO Worker Safety",
+      "agency": "OSHA",
+      "description": "Worker safety inspections at confined animal feeding operations",
+      "records": [
+        "OSHA inspections of confined animal feeding operations (CAFOs)",
+        "Hazardous atmosphere exposure records (hydrogen sulfide, ammonia, methane) at animal confinement facilities",
+        "Manure pit incident and fatality investigation reports",
+        "Citations for respiratory protection violations at livestock facilities",
+        "Confined space entry violations at animal agriculture operations"
+      ],
+      "keywords": ["CAFO", "hydrogen sulfide", "manure pit", "confined space", "respiratory", "livestock"]
+    },
+    {
+      "id": "usda-aphis-research-animals",
+      "name": "USDA-APHIS Research Animal Records",
+      "agency": "USDA-APHIS",
+      "description": "Annual reports and inspection records for research facilities using animals",
+      "records": [
+        "Annual reports filed by registered research facilities (APHIS Form 7023)",
+        "Inspection reports for registered research facilities",
+        "IACUC (Institutional Animal Care and Use Committee) protocol reviews obtained during inspections",
+        "Enforcement actions against research facilities for AWA violations",
+        "Pain and distress category data (Column D and E reports) by facility"
+      ],
+      "keywords": ["research facility", "IACUC", "annual report", "Column E", "pain category"]
+    },
+    {
+      "id": "usda-fsa-subsidy-payments",
+      "name": "USDA-FSA Agricultural Subsidy Payments",
+      "agency": "USDA-FSA",
+      "description": "Farm subsidy payments to animal agriculture operations",
+      "records": [
+        "Commodity program payments to livestock, dairy, and poultry operations",
+        "Livestock Forage Disaster Program (LFP) payments",
+        "Emergency Assistance for Livestock, Honeybees, and Farm-raised Fish Program (ELAP) payments",
+        "Livestock Indemnity Program (LIP) payments for animal losses",
+        "Dairy Margin Coverage (DMC) program payments",
+        "Payment limitation waivers for animal agriculture entities"
+      ],
+      "keywords": ["subsidy", "payment", "livestock", "dairy", "LIP", "ELAP", "DMC", "commodity"]
+    },
+    {
+      "id": "usda-nrcs-eqip-livestock",
+      "name": "USDA-NRCS EQIP Payments for Livestock Operations",
+      "agency": "USDA-NRCS",
+      "description": "Environmental Quality Incentives Program payments for animal waste management",
+      "records": [
+        "Environmental Quality Incentives Program (EQIP) contracts and payments for animal waste management practices",
+        "Practice codes 313 (Waste Storage Facility), 359 (Waste Treatment Lagoon), 590 (Nutrient Management)",
+        "Conservation practice certifications for livestock operations",
+        "Conservation Stewardship Program (CSP) contracts with animal agriculture operations",
+        "Technical assistance records for manure management system design"
+      ],
+      "keywords": ["EQIP", "waste storage", "lagoon", "nutrient management", "conservation", "manure"]
+    },
+    {
+      "id": "usda-ams-organic-livestock",
+      "name": "USDA-AMS Organic Livestock Program",
+      "agency": "USDA-AMS",
+      "description": "Organic certification and compliance for animal agriculture",
+      "records": [
+        "Organic certification applications and approvals for livestock operations",
+        "Organic system plans (OSPs) for livestock (non-proprietary portions)",
+        "Noncompliance reports and adverse actions against certified organic livestock operations",
+        "Complaint investigation records related to organic animal welfare claims",
+        "National Organic Program (NOP) audit findings for livestock certifiers"
+      ],
+      "keywords": ["organic", "NOP", "certification", "livestock", "organic system plan", "pasture"]
+    },
+    {
+      "id": "epa-environmental-justice-cafo",
+      "name": "EPA Environmental Justice and CAFOs",
+      "agency": "EPA",
+      "description": "Environmental justice assessments for communities near CAFOs",
+      "records": [
+        "Environmental justice analyses conducted for CAFO permit decisions",
+        "Title VI complaints filed against state agencies regarding CAFO permitting",
+        "EJScreen data and analyses for areas surrounding permitted CAFOs",
+        "Community health impact assessments related to animal agriculture facilities",
+        "Correspondence between EPA and environmental justice advocacy organizations regarding CAFOs"
+      ],
+      "keywords": ["environmental justice", "Title VI", "EJScreen", "community health", "disproportionate impact"]
+    },
+    {
+      "id": "usda-aphis-transport-deaths",
+      "name": "USDA-APHIS Livestock Transport Deaths",
+      "agency": "USDA-APHIS",
+      "description": "Animal losses during transportation to slaughter",
+      "records": [
+        "28-hour law (49 U.S.C. Section 80502) enforcement records",
+        "Dead-on-arrival (DOA) reports at federally inspected slaughter establishments",
+        "Non-ambulatory (downer) animal reports at slaughter facilities",
+        "FSIS ante-mortem condemnation records related to transport injuries",
+        "Complaints and investigations related to livestock transport conditions"
+      ],
+      "keywords": ["transport", "28-hour law", "dead on arrival", "DOA", "downer", "non-ambulatory"]
+    },
+    {
+      "id": "usda-industry-correspondence",
+      "name": "USDA Industry Correspondence and Lobbying",
+      "agency": "USDA-APHIS",
+      "description": "Communications between USDA and animal agriculture industry groups",
+      "records": [
+        "Correspondence between USDA officials and the following industry organizations: National Cattlemen's Beef Association, National Pork Producers Council, National Chicken Council, American Farm Bureau Federation, United Egg Producers",
+        "Meeting calendars and visitor logs for USDA leadership involving animal agriculture industry representatives",
+        "Industry comments and USDA responses on proposed rulemakings affecting animal agriculture",
+        "Advisory committee meeting minutes (e.g., National Advisory Committee on Meat and Poultry Inspection)"
+      ],
+      "keywords": ["industry", "correspondence", "lobbying", "advisory committee", "rulemaking", "comment"]
+    },
+    {
+      "id": "usda-fsis-facility-permits",
+      "name": "FSIS Establishment Grants of Inspection",
+      "agency": "USDA-FSIS",
+      "description": "Grants of federal inspection for slaughter and processing establishments",
+      "records": [
+        "Applications for federal grants of inspection for slaughter and processing establishments",
+        "HACCP plans submitted by establishments (non-proprietary portions)",
+        "Sanitation Standard Operating Procedures (SSOPs) submitted by establishments",
+        "Establishment profile data including species slaughtered, production volume, and inspection personnel assigned",
+        "Withdrawal or refusal of inspection records"
+      ],
+      "keywords": ["grant of inspection", "HACCP", "SSOP", "establishment", "sanitation"]
+    },
+    {
+      "id": "epa-cafo-reporting-exemption",
+      "name": "EPA CAFO Reporting Exemptions (FARM Act)",
+      "agency": "EPA",
+      "description": "Records related to CERCLA/EPCRA reporting exemptions for animal agriculture",
+      "records": [
+        "Records related to the implementation of the Fair Agricultural Reporting Method (FARM) Act exemption for CERCLA and EPCRA reporting by farms",
+        "Data on CAFO emissions previously reported under CERCLA Section 103 and EPCRA Section 304 before the exemption",
+        "EPA analyses of the environmental impact of the reporting exemption",
+        "Correspondence regarding the Waterkeeper Alliance v. EPA litigation and its impact on CAFO regulation"
+      ],
+      "keywords": ["FARM Act", "CERCLA", "EPCRA", "reporting exemption", "emissions", "Waterkeeper"]
+    }
+  ]
+}
